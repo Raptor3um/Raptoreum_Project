@@ -39,6 +39,40 @@
 
 <body id="top">
 
+	<!-- Popup
+	===================================================== -->
+		<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Choose</h2>
+			</div>
+			<div class="modal-body">
+				<p><i class="fas fa-file-alt"></i> Go to the one pager version <br> <a href="#">Click here...</a></p>
+				<p><i class="fas fa-globe"></i> Go to the main website <br> <a href="#">Click here...</a></p>
+			</div>
+		</div>
+		</div>
+
+		<script>
+				
+				var modal = document.getElementById("myModal");
+				
+		
+				var span = document.getElementsByClassName("close")[0];
+				
+				
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+				
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+			</script>
+
 	<!-- header
    ================================================== -->
    <header class="main-header">
