@@ -16,7 +16,10 @@
     	$("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+				$("#preloader").delay(300).fadeOut("slow");
+				
+				// set popup time
+				setTimeout(popUpFunction, 1500);
 
       }); 
 
@@ -43,7 +46,11 @@
 			}, 1000);
      	}   	   	
 
-  	});
+		});
+		
+		var popUpFunction = function() {
+			modal.style.display = "block";
+		}
 
 
 	/* ------------------------------------------------------
