@@ -84,6 +84,10 @@
 	 * ------------------------------------------------------ */
   	$(window).on('load', function() {
 
+		$('.country-selector').click(function(){
+			$('.country-selector').toggleClass('expand-selection')
+		})
+
 	   $('#testimonial-slider').flexslider({
 	   	namespace: "flex-",
 	      controlsContainer: ".flexslider-controls",
